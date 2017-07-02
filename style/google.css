@@ -1,11 +1,10 @@
 body {
   margin: 0 auto;
-  width: 800px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
-img {
+div#logo img {
   display: block;
   margin: auto;
   margin-top: 150px;
@@ -14,13 +13,14 @@ img {
 div#navbar {
   position: fixed;
   top: 0;
-  right: 5px;
+  right: 10px;
   height: 25px;
+  padding: 0;
 }
+
 
 div#navbar li {
   display: inline;
-  border: 1px solid black;
   padding: 5px 10px;
   font-size: 80%;
 }
@@ -31,23 +31,47 @@ div#search {
 }
 
 div#footer {
+  background-color: #e8e8e8;
   position: absolute;
-  bottom: 25px;
-  border: 1px solid black;
+  bottom: 0px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
   font-size: 80%;
+}
+
+div#footer ul {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
 }
 
 div#footer li {
   display: inline;
+  padding: 0 5px;
+}
+
+div#footer .footer-right {
+  float: right;
 }
 
 button {
   font-weight: bold;
+  color: #666;
   margin-top: 20px;
   padding: 10px 5px;
+}
+
+button:hover {
+  color: #000;
 }
 
 .textbox {
   width: 300px;
   padding: 12px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
